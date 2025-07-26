@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incodencia - Innovación, Seguridad y Confianza</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900">
+
+ <!-- HEADER -->
+ <header class="fixed w-full z-50 transition-all duration-300 bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <img src="logo.svg" alt="Incodencia" class="font-bold text-xl text-blue-700" class="logo w-12">
+      </div>
+      <nav class="hidden md:flex gap-6 text-gray-700 font-medium">
+        <a href="#inicio" data-i18n="nav_home" class="hover:text-blue-600">Inicio</a>
+        <a href="#servicios" data-i18n="nav_services" class="hover:text-blue-600">Servicios</a>
+        <a href="#proyectos" data-i18n="nav_projects" class="hover:text-blue-600">Proyectos</a>
+        <a href="#nosotros" data-i18n="nav_about" class="hover:text-blue-600">Nosotros</a>
+        <a href="#contacto" data-i18n="nav_contact" class="hover:text-blue-600">Contacto</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <select id="language-select" class="lang-select border border-blue-600 text-blue-700 rounded-md p-1 text-sm">
+          <option value="es">🇪🇸 ES</option>
+          <option value="en">🇬🇧 EN</option>
+          <option value="pt">🇧🇷 PT</option>
+          <option value="fr">🇫🇷 FR</option>
+          <option value="ar">🇸🇦 AR</option>
+          <option value="zh">🇨🇳 ZH</option>
+        </select>
+        <a href="#contacto" data-i18n="work_with_us" class="hidden md:inline-block btn-gradient text-white px-4 py-2 rounded-lg">Trabajemos juntos</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO con partículas -->
+  <section id="inicio" class="relative min-h-screen flex flex-col items-center justify-center text-center px-6 bg-black text-white overflow-hidden">
+    <div id="particles-js"></div>
+    <div class="hero-content">
+      <img src="logo.png" alt="Logo Incodencia" class="mx-auto mb-6 w-28 md:w-40 logo">
+      <h2 class="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
+        <span id="hero-text"></span>
+      </h2>
+      <p class="text-lg md:text-xl mb-8 max-w-xl mx-auto">Incodencia diseña soluciones tecnológicas modernas y confiables para llevar tu visión más lejos.</p>
+      <a href="#servicios" class="btn-gradient text-white px-6 py-3 rounded-lg text-lg">Descubre nuestros servicios</a>
+    </div>
+  </section>
+
+<!-- PROYECTOS PRO -->
+<section id="proyectos" class="py-24 bg-gradient-to-br from-white via-blue-50 to-blue-100 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+    <h3 class="text-4xl font-bold text-blue-900 mb-4 reveal" data-i18n="projects_title">Proyectos Destacados</h3>
+    <p class="text-gray-700 mb-12 text-lg reveal">Descubre lo mejor de nuestro trabajo con animaciones dinámicas.</p>
+
+    <div class="relative overflow-hidden">
+      <!-- Carrusel contenedor -->
+      <div id="projects-carousel" class="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory">
+        
+        <!-- Proyecto -->
+        <div class="relative group project-card tilt-card snap-center min-w-[300px] md:min-w-[400px] rounded-2xl shadow-lg bg-white overflow-hidden">
+          <div class="relative w-full aspect-[4/3] overflow-hidden">
+            <img src="https://via.placeholder.com/400x250" alt="Proyecto 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-4">
+            <h4 class="text-white text-xl font-semibold">Robot Cuadrúpedo</h4>
+            <p class="text-gray-200 text-sm">Control con ESP8266 vía navegador.</p>
+            <a href="#" class="mt-2 text-sm font-semibold text-green-300 hover:text-green-400">Ver más →</a>
+          </div>
+        </div>
+
+        <!-- Proyecto -->
+        <div class="relative group project-card tilt-card snap-center min-w-[300px] md:min-w-[400px] rounded-2xl shadow-lg bg-white overflow-hidden">
+          <div class="relative w-full aspect-[4/3] overflow-hidden">
+            <img src="https://via.placeholder.com/400x250" alt="Proyecto 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-4">
+            <h4 class="text-white text-xl font-semibold">Sistema Web en PHP</h4>
+            <p class="text-gray-200 text-sm">Gestión de usuarios y productos.</p>
+            <a href="#" class="mt-2 text-sm font-semibold text-green-300 hover:text-green-400">Ver más →</a>
+          </div>
+        </div>
+
+        <!-- Proyecto -->
+        <div class="relative group project-card tilt-card snap-center min-w-[300px] md:min-w-[400px] rounded-2xl shadow-lg bg-white overflow-hidden">
+          <div class="relative w-full aspect-[4/3] overflow-hidden">
+            <img src="https://via.placeholder.com/400x250" alt="Proyecto 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-4">
+            <h4 class="text-white text-xl font-semibold">App React Native</h4>
+            <p class="text-gray-200 text-sm">Aplicaciones móviles cross-platform.</p>
+            <a href="#" class="mt-2 text-sm font-semibold text-green-300 hover:text-green-400">Ver más →</a>
+          </div>
+        </div>
+
+        <!-- Proyecto Extra -->
+        <div class="relative group project-card tilt-card snap-center min-w-[300px] md:min-w-[400px] rounded-2xl shadow-lg bg-white overflow-hidden">
+          <div class="relative w-full aspect-[4/3] overflow-hidden">
+            <img src="https://via.placeholder.com/400x250" alt="Proyecto 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-4">
+            <h4 class="text-white text-xl font-semibold">App React Native</h4>
+            <p class="text-gray-200 text-sm">Aplicaciones móviles cross-platform.</p>
+            <a href="#" class="mt-2 text-sm font-semibold text-green-300 hover:text-green-400">Ver más →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botones de navegación -->
+      <button id="prev-project" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-full p-3 hover:scale-110 transition">
+        <img src="https://img.icons8.com/ios-glyphs/24/000000/chevron-left.png" alt="Prev">
+      </button>
+      <button id="next-project" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-full p-3 hover:scale-110 transition">
+        <img src="https://img.icons8.com/ios-glyphs/24/000000/chevron-right.png" alt="Next">
+      </button>
+    </div>
+
+    <!-- Botón Ver Más -->
+    <div class="mt-10">
+      <a href="#" class="btn-gradient text-white px-6 py-3 rounded-lg text-lg shadow-lg hover:scale-105 transition">
+        Ver todos los proyectos
+      </a>
+    </div>
+  </div>
+</section>
+
+  
+  
+
+  <!-- NOSOTROS -->
+  <section id="nosotros" class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto text-center px-6 reveal">
+      <h3 class="text-3xl font-bold text-blue-900 mb-6" data-i18n="about_title">Sobre Incodencia</h3>
+      <p class="text-gray-700 text-lg leading-relaxed" data-i18n="about_text">
+        En Incodencia creemos que la innovación debe ir de la mano con la seguridad y la confianza.  
+        Somos un equipo apasionado por crear soluciones tecnológicas que cambian el juego:
+         desde interfaces web robustas hasta plataformas para Android y IOS.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+<section id="contacto" class="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-100 relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-20">
+    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <circle cx="20%" cy="30%" r="200" fill="#3B82F6"></circle>
+        <circle cx="80%" cy="70%" r="150" fill="#10B981"></circle>
+    </svg>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-6 text-center relative z-10">
+    <h3 class="text-4xl font-bold text-blue-900 mb-4 reveal" data-i18n="contact_us">Contáctanos</h3>
+    <p class="text-gray-700 mb-8 text-lg reveal" data-i18n="contact_sub">
+        ¿Listo para llevar tu idea al siguiente nivel? Escribinos.
+    </p>
+
+    <form class="grid gap-6 bg-white p-8 rounded-2xl shadow-2xl reveal contact-form">
+        <!-- Nombre -->
+        <div class="relative">
+        <span class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">
+            <img src="https://img.icons8.com/fluency-systems-regular/24/user.png" alt="icono nombre">
+        </span>
+        <input type="text" placeholder="Tu nombre" class="w-full pl-12 border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition" />
+        </div>
+
+        <!-- Email -->
+        <div class="relative">
+        <span class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">
+            <img src="https://img.icons8.com/fluency-systems-regular/24/new-post.png" alt="icono email">
+        </span>
+        <input type="email" placeholder="Tu email" class="w-full pl-12 border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition" />
+        </div>
+
+        <!-- Mensaje -->
+        <div class="relative">
+        <span class="absolute left-4 top-4 text-gray-400">
+            <img src="https://img.icons8.com/fluency-systems-regular/24/speech-bubble-with-dots.png" alt="icono mensaje">
+        </span>
+        <textarea rows="4" placeholder="Tu mensaje" class="w-full pl-12 border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"></textarea>
+        </div>
+
+        <!-- Botón -->
+        <button type="submit" class="btn-gradient text-white py-3 rounded-lg text-lg flex items-center justify-center gap-2 hover:scale-105 transition transform">
+        <img src="https://img.icons8.com/fluency-systems-regular/24/paper-plane.png" alt="Enviar" class="w-5 h-5" />
+        <span data-i18n="btn_contact">Enviar mensaje</span>
+        </button>
+    </form>
+    </div>
+</section>
+  
+
+  <!-- FOOTER -->
+  <footer class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-6 text-center">
+    <img src="logo.svg" alt="Logo Incodencia" class="mx-auto mb-3 w-20 logo">
+    <p class="mb-2">&copy; 2025 Incodencia - <span data-i18n="footer_text">Innovación, Seguridad y Confianza</span></p>
+    <div class="flex justify-center gap-4 mt-3 text-xl">
+      <a href="#" class="hover:text-green-400"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="hover:text-green-400"><i class="fab fa-linkedin"></i></a>
+      <a href="#" class="hover:text-green-400"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+  <script src="changeLanguage.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>

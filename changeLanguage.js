@@ -1,0 +1,220 @@
+// changeLanguage.js
+const translations = {
+    es: {
+      nav_home: "Inicio",
+      nav_services: "Servicios",
+      nav_projects: "Proyectos",
+      nav_about: "Nosotros",
+      nav_contact: "Contacto",
+      work_with_us: "Trabajemos juntos",
+      hero_title: "Innovación, Seguridad y Confianza",
+      hero_subtitle: "Incodencia diseña soluciones tecnológicas modernas y confiables para llevar tu visión más lejos.",
+      btn_services: "Descubre nuestros servicios",
+      services_title: "Nuestros Servicios",
+      service_web: "Desarrollo Web",
+      service_web_desc: "Sitios modernos, rápidos y responsivos adaptados a tus necesidades.",
+      service_iot: "IoT y Microcontroladores",
+      service_iot_desc: "Prototipos y soluciones en hardware con ESP8266 y Arduino.",
+      service_consult: "Consultoría",
+      service_consult_desc: "Asesoramiento especializado para optimizar tus proyectos tecnológicos.",
+      projects_title: "Proyectos Destacados",
+      project_1: "Robot Cuadrúpedo",
+      project_1_desc: "Diseño y control con ESP8266 vía navegador web.",
+      project_2: "Sistema Web en PHP",
+      project_2_desc: "Gestión de usuarios y productos para empresas.",
+      project_3: "IoT y Automatización",
+      project_3_desc: "Soluciones de automatización industrial con sensores.",
+      about_title: "Sobre Incodencia",
+      about_text: "En Incodencia creemos que la innovación debe ir de la mano con la seguridad y la confianza. Somos un equipo apasionado por crear soluciones tecnológicas que cambian el juego: desde sistemas embebidos hasta plataformas web robustas.",
+      contact_us: "Contáctanos",
+      contact_sub: "¿Listo para llevar tu idea al siguiente nivel? Escribinos.",
+      btn_contact: "Enviar mensaje",
+      footer_text: "Innovación, Seguridad y Confianza"
+    },
+    en: {
+      nav_home: "Home",
+      nav_services: "Services",
+      nav_projects: "Projects",
+      nav_about: "About Us",
+      nav_contact: "Contact",
+      work_with_us: "Work with us",
+      hero_title: "Innovation, Security and Trust",
+      hero_subtitle: "Incodencia designs modern and reliable technological solutions to take your vision further.",
+      btn_services: "Discover our services",
+      services_title: "Our Services",
+      service_web: "Web Development",
+      service_web_desc: "Modern, fast, and responsive websites tailored to your needs.",
+      service_iot: "IoT and Microcontrollers",
+      service_iot_desc: "Prototypes and hardware solutions with ESP8266 and Arduino.",
+      service_consult: "Consulting",
+      service_consult_desc: "Specialized advice to optimize your tech projects.",
+      projects_title: "Featured Projects",
+      project_1: "Quadruped Robot",
+      project_1_desc: "Design and control with ESP8266 via web browser.",
+      project_2: "Web System in PHP",
+      project_2_desc: "User and product management for companies.",
+      project_3: "IoT and Automation",
+      project_3_desc: "Industrial automation solutions with sensors.",
+      about_title: "About Incodencia",
+      about_text: "At Incodencia, we believe that innovation must go hand in hand with security and trust. We are passionate about creating tech solutions that change the game: from embedded systems to robust web platforms.",
+      contact_us: "Contact Us",
+      contact_sub: "Ready to take your idea to the next level? Write to us.",
+      btn_contact: "Send message",
+      footer_text: "Innovation, Security and Trust"
+    },
+    pt: {
+      nav_home: "Início",
+      nav_services: "Serviços",
+      nav_projects: "Projetos",
+      nav_about: "Sobre nós",
+      nav_contact: "Contato",
+      work_with_us: "Trabalhe conosco",
+      hero_title: "Inovação, Segurança e Confiança",
+      hero_subtitle: "A Incodencia projeta soluções tecnológicas modernas e confiáveis para levar sua visão mais longe.",
+      btn_services: "Descubra nossos serviços",
+      services_title: "Nossos Serviços",
+      service_web: "Desenvolvimento Web",
+      service_web_desc: "Sites modernos, rápidos e responsivos, adaptados às suas necessidades.",
+      service_iot: "IoT e Microcontroladores",
+      service_iot_desc: "Protótipos e soluções em hardware com ESP8266 e Arduino.",
+      service_consult: "Consultoria",
+      service_consult_desc: "Consultoria especializada para otimizar seus projetos tecnológicos.",
+      projects_title: "Projetos em Destaque",
+      project_1: "Robô Quadrúpede",
+      project_1_desc: "Design e controle com ESP8266 via navegador.",
+      project_2: "Sistema Web em PHP",
+      project_2_desc: "Gestão de usuários e produtos para empresas.",
+      project_3: "IoT e Automação",
+      project_3_desc: "Soluções de automação industrial com sensores.",
+      about_title: "Sobre a Incodencia",
+      about_text: "Na Incodencia acreditamos que a inovação deve andar de mãos dadas com a segurança e a confiança. Somos apaixonados por criar soluções tecnológicas que mudam o jogo: de sistemas embarcados a plataformas web robustas.",
+      contact_us: "Contate-nos",
+      contact_sub: "Pronto para levar sua ideia ao próximo nível? Escreva para nós.",
+      btn_contact: "Enviar mensagem",
+      footer_text: "Inovação, Segurança e Confiança"
+    },
+    fr: {
+      nav_home: "Accueil",
+      nav_services: "Services",
+      nav_projects: "Projets",
+      nav_about: "À propos",
+      nav_contact: "Contact",
+      work_with_us: "Travaillons ensemble",
+      hero_title: "Innovation, Sécurité et Confiance",
+      hero_subtitle: "Incodencia conçoit des solutions technologiques modernes et fiables pour aller plus loin dans votre vision.",
+      btn_services: "Découvrez nos services",
+      services_title: "Nos Services",
+      service_web: "Développement Web",
+      service_web_desc: "Sites modernes, rapides et réactifs, adaptés à vos besoins.",
+      service_iot: "IoT et Microcontrôleurs",
+      service_iot_desc: "Prototypes et solutions matérielles avec ESP8266 et Arduino.",
+      service_consult: "Consultation",
+      service_consult_desc: "Conseils spécialisés pour optimiser vos projets technologiques.",
+      projects_title: "Projets Vedettes",
+      project_1: "Robot Quadrupède",
+      project_1_desc: "Conception et contrôle avec ESP8266 via navigateur web.",
+      project_2: "Système Web en PHP",
+      project_2_desc: "Gestion des utilisateurs et des produits pour les entreprises.",
+      project_3: "IoT et Automatisation",
+      project_3_desc: "Solutions d'automatisation industrielle avec capteurs.",
+      about_title: "À propos d'Incodencia",
+      about_text: "Chez Incodencia, nous croyons que l'innovation doit aller de pair avec la sécurité et la confiance. Nous sommes passionnés par la création de solutions technologiques révolutionnaires : des systèmes embarqués aux plateformes web robustes.",
+      contact_us: "Contactez-nous",
+      contact_sub: "Prêt à faire passer votre idée au niveau supérieur ? Écrivez-nous.",
+      btn_contact: "Envoyer un message",
+      footer_text: "Innovation, Sécurité et Confiance"
+    },
+    ar: {
+      nav_home: "الرئيسية",
+      nav_services: "الخدمات",
+      nav_projects: "المشاريع",
+      nav_about: "معلومات عنا",
+      nav_contact: "اتصال",
+      work_with_us: "اعمل معنا",
+      hero_title: "الابتكار، الأمان والثقة",
+      hero_subtitle: "تصمم Incodencia حلولاً تكنولوجية حديثة وموثوقة لدفع رؤيتك إلى الأمام.",
+      btn_services: "اكتشف خدماتنا",
+      services_title: "خدماتنا",
+      service_web: "تطوير المواقع",
+      service_web_desc: "مواقع حديثة وسريعة ومتجاوبة تلبي احتياجاتك.",
+      service_iot: "إنترنت الأشياء والميكروكنترولر",
+      service_iot_desc: "نماذج أولية وحلول في الأجهزة باستخدام ESP8266 و Arduino.",
+      service_consult: "استشارات",
+      service_consult_desc: "استشارات متخصصة لتحسين مشاريعك التكنولوجية.",
+      projects_title: "المشاريع المميزة",
+      project_1: "روبوت رباعي الأرجل",
+      project_1_desc: "تصميم وتحكم باستخدام ESP8266 عبر المتصفح.",
+      project_2: "نظام ويب بـ PHP",
+      project_2_desc: "إدارة المستخدمين والمنتجات للشركات.",
+      project_3: "إنترنت الأشياء والأتمتة",
+      project_3_desc: "حلول الأتمتة الصناعية باستخدام المستشعرات.",
+      about_title: "حول Incodencia",
+      about_text: "في Incodencia نؤمن أن الابتكار يجب أن يقترن بالأمان والثقة. نحن فريق شغوف بابتكار حلول تقنية تغير قواعد اللعبة: من الأنظمة المدمجة إلى المنصات الإلكترونية القوية.",
+      contact_us: "اتصل بنا",
+      contact_sub: "هل أنت مستعد للارتقاء بفكرتك إلى المستوى التالي؟ راسلنا.",
+      btn_contact: "أرسل الرسالة",
+      footer_text: "الابتكار، الأمان والثقة"
+    },
+    zh: {
+      nav_home: "首页",
+      nav_services: "服务",
+      nav_projects: "项目",
+      nav_about: "关于我们",
+      nav_contact: "联系",
+      work_with_us: "与我们合作",
+      hero_title: "创新、安全与信任",
+      hero_subtitle: "Incodencia 设计现代且可靠的技术解决方案，让你的愿景更进一步。",
+      btn_services: "探索我们的服务",
+      services_title: "我们的服务",
+      service_web: "网站开发",
+      service_web_desc: "现代、快速、响应式的网站，满足您的需求。",
+      service_iot: "物联网与微控制器",
+      service_iot_desc: "基于 ESP8266 和 Arduino 的硬件原型和解决方案。",
+      service_consult: "咨询服务",
+      service_consult_desc: "为优化您的技术项目提供专业建议。",
+      projects_title: "精选项目",
+      project_1: "四足机器人",
+      project_1_desc: "使用 ESP8266 通过浏览器进行设计与控制。",
+      project_2: "PHP 网站系统",
+      project_2_desc: "企业用户和产品管理平台。",
+      project_3: "物联网与自动化",
+      project_3_desc: "基于传感器的工业自动化解决方案。",
+      about_title: "关于 Incodencia",
+      about_text: "在 Incodencia，我们相信创新必须与安全和信任密不可分。我们热衷于打造改变游戏规则的技术解决方案：从嵌入式系统到强大的网络平台。",
+      contact_us: "联系我们",
+      contact_sub: "准备好将你的想法提升到新高度了吗？给我们写信。",
+      btn_contact: "发送信息",
+      footer_text: "创新、安全与信任"
+    }
+  };
+  
+  // Cambiar idioma
+  function changeLanguage(lang) {
+    if (!translations[lang]) lang = "es";
+    localStorage.setItem("language", lang);
+  
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      if (translations[lang][key]) {
+        el.textContent = translations[lang][key];
+      }
+    });
+  }
+  
+  // Inicialización
+  function initLanguage() {
+    const savedLang = localStorage.getItem("language") || "es";
+    document.getElementById("language-select").value = savedLang;
+    changeLanguage(savedLang);
+  
+    document.getElementById("language-select").addEventListener("change", (e) => {
+      changeLanguage(e.target.value);
+    });
+  }
+  
+  document.addEventListener("DOMContentLoaded", initLanguage);
+  
+document.getElementById('language-select').addEventListener('change', (e) => {
+    const lang = e.target.value;
+    alert(`Cambiando a idioma: ${lang.toUpperCase()}`);
+  });
