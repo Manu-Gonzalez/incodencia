@@ -1,0 +1,46 @@
+{
+  "systems": [
+    {
+      "id": "turnos",
+      "title": "Gestión de Turnos Online",
+      "description": "Base: calendario + reservas + notificaciones. Adaptaciones: peluquerías, clínicas, gimnasios, talleres.",
+      "icon": "assets/placeholders/turnos.png",
+      "demoUrl": "#"
+    },
+    {
+      "id": "inventario",
+      "title": "Gestión de Inventario y Ventas",
+      "description": "Base: productos + stock + facturación básica. Adaptaciones: kioscos, ferreterías, librerías, tiendas online.",
+      "icon": "assets/placeholders/inventario.png",
+      "demoUrl": "#"
+    },
+    {
+      "id": "crm",
+      "title": "Gestión de Clientes (CRM básico)",
+      "description": "Base: registro de clientes + seguimiento + recordatorios. Adaptaciones: inmobiliarias, agencias de autos, servicios profesionales.",
+      "icon": "assets/placeholders/crm.png",
+      "demoUrl": "#"
+    },
+    {
+      "id": "tickets",
+      "title": "Sistema de Tickets / Soporte",
+      "description": "Base: usuarios crean consultas → administración responde → historial. Adaptaciones: soporte técnico, reclamos en comercios, asistencia interna.",
+      "icon": "assets/placeholders/tickets.png",
+      "demoUrl": "#"
+    },
+    {
+      "id": "elearning",
+      "title": "Sistema de Cursos / E-learning simple",
+      "description": "Base: registro de alumnos + clases + progreso. Adaptaciones: academias online, capacitaciones empresariales, talleres pequeños.",
+      "icon": "assets/placeholders/elearning.png",
+      "demoUrl": "#"
+    },
+    {
+      "id": "proyectos",
+      "title": "Sistema de Gestión de Proyectos / Tareas",
+      "description": "Base: usuarios + proyectos + tareas + estado. Adaptaciones: agencias de marketing, constructoras, freelos.",
+      "icon": "assets/placeholders/proyectos.png",
+      "demoUrl": "#"
+    }
+  ]
+}
