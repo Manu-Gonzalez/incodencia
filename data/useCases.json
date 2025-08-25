@@ -1,0 +1,19 @@
+{
+  "cases": [
+    {
+      "system": "Gestión de Turnos Online",
+      "sectors": ["Gimnasios: Reservas de clases.", "Peluquerías: Citas con estilistas.", "Clínicas: Turnos médicos."]
+    },
+    {
+      "system": "Gestión de Inventario y Ventas",
+      "sectors": ["Kioscos: Control de stock diario.", "Ferreterías: Gestión de herramientas.", "Tiendas online: Facturación automática."]
+    },
+    {
+      "system": "Sistema Genérico (Base)",
+      "adaptations": [
+        {"generic": "Calendario + Reservas", "x": "Gimnasio: Clases fitness", "y": "Clínica: Consultas", "z": "Taller: Reparaciones"},
+        {"generic": "Stock + Facturación", "x": "Librería: Libros en inventario", "y": "Ferretería: Herramientas", "z": "Kiosco: Productos diarios"}
+      ]
+    }
+  ]
+}

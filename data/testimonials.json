@@ -1,0 +1,19 @@
+{
+  "testimonials": [
+    {
+      "quote": "Incodencia transformó nuestro negocio con su sistema adaptable. ¡Altamente recomendado!",
+      "author": "Juan Pérez",
+      "company": "Gimnasio FitLife"
+    },
+    {
+      "quote": "La personalización para nuestra clínica fue impecable. Seguridad y confianza total.",
+      "author": "Ana López",
+      "company": "Clínica SaludPlus"
+    },
+    {
+      "quote": "Excelente soporte y soluciones rápidas para nuestra tienda.",
+      "author": "Carlos Gómez",
+      "company": "Tienda Online ShopNow"
+    }
+  ]
+}
