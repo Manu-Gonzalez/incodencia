@@ -1,0 +1,25 @@
+<svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .logo {
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      font-size: 64px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      fill: #111827;
+    }
+    .accent {
+      fill: #4f46e5;
+    }
+  </style>
+
+  <!-- Fondo opcional -->
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- Texto principal -->
+  <text x="50" y="115" class="logo">
+    Inco<tspan class="accent">den</tspan>cia
+  </text>
+
+  <!-- Línea decorativa sutil -->
+  <rect x="50" y="130" width="220" height="4" rx="2" fill="#4f46e5"/>
+</svg>
