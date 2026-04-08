@@ -168,7 +168,9 @@ function initProjectCarousel() {
 
 // === Inicializar todas las animaciones ===
 function initAnimations() {
-    initTypewriter("hero-text", ["Innovación", "Seguridad", "Confianza"], 100, 2000);
+    const lang = localStorage.getItem("language") || "es";
+    const words = (translations[lang]?.typewriter_words || "Innovación,Seguridad,Confianza").split(",");
+    initTypewriter("hero-text", words, 100, 2000);
     initCardTilt(".tilt-card");
     initRippleEffect(".btn-gradient");
     initMagneticButtons(".btn-gradient");

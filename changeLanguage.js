@@ -29,7 +29,9 @@ const translations = {
       contact_us: "Contáctanos",
       contact_sub: "¿Listo para llevar tu idea al siguiente nivel? Escribinos.",
       btn_contact: "Enviar mensaje",
-      footer_text: "Innovación, Seguridad y Confianza"
+      footer_text: "Innovación, Seguridad y Confianza",
+      projects_sub: "Descubre lo mejor de nuestro trabajo con animaciones dinámicas.",
+      typewriter_words: "Innovación,Seguridad,Confianza"
     },
     en: {
       nav_home: "Home",
@@ -60,7 +62,9 @@ const translations = {
       contact_us: "Contact Us",
       contact_sub: "Ready to take your idea to the next level? Write to us.",
       btn_contact: "Send message",
-      footer_text: "Innovation, Security and Trust"
+      footer_text: "Innovation, Security and Trust",
+      projects_sub: "Discover the best of our work with dynamic animations.",
+      typewriter_words: "Innovation,Security,Trust"
     },
     pt: {
       nav_home: "Início",
@@ -91,7 +95,9 @@ const translations = {
       contact_us: "Contate-nos",
       contact_sub: "Pronto para levar sua ideia ao próximo nível? Escreva para nós.",
       btn_contact: "Enviar mensagem",
-      footer_text: "Inovação, Segurança e Confiança"
+      footer_text: "Inovação, Segurança e Confiança",
+      projects_sub: "Descubra o melhor do nosso trabalho com animações dinâmicas.",
+      typewriter_words: "Inovação,Segurança,Confiança"
     },
     fr: {
       nav_home: "Accueil",
@@ -122,7 +128,9 @@ const translations = {
       contact_us: "Contactez-nous",
       contact_sub: "Prêt à faire passer votre idée au niveau supérieur ? Écrivez-nous.",
       btn_contact: "Envoyer un message",
-      footer_text: "Innovation, Sécurité et Confiance"
+      footer_text: "Innovation, Sécurité et Confiance",
+      projects_sub: "Découvrez le meilleur de notre travail avec des animations dynamiques.",
+      typewriter_words: "Innovation,Sécurité,Confiance"
     },
     ar: {
       nav_home: "الرئيسية",
@@ -153,7 +161,9 @@ const translations = {
       contact_us: "اتصل بنا",
       contact_sub: "هل أنت مستعد للارتقاء بفكرتك إلى المستوى التالي؟ راسلنا.",
       btn_contact: "أرسل الرسالة",
-      footer_text: "الابتكار، الأمان والثقة"
+      footer_text: "الابتكار، الأمان والثقة",
+      projects_sub: "اكتشف أفضل أعمالنا مع الرسوم المتحركة.",
+      typewriter_words: "الابتكار,الأمان,الثقة"
     },
     zh: {
       nav_home: "首页",
@@ -184,7 +194,9 @@ const translations = {
       contact_us: "联系我们",
       contact_sub: "准备好将你的想法提升到新高度了吗？给我们写信。",
       btn_contact: "发送信息",
-      footer_text: "创新、安全与信任"
+      footer_text: "创新、安全与信任",
+      projects_sub: "通过动态动画发现我们工作的精华。",
+      typewriter_words: "创新,安全,信任"
     }
   };
   
@@ -214,7 +226,3 @@ const translations = {
   
   document.addEventListener("DOMContentLoaded", initLanguage);
   
-document.getElementById('language-select').addEventListener('change', (e) => {
-    const lang = e.target.value;
-    alert(`Cambiando a idioma: ${lang.toUpperCase()}`);
-  });
