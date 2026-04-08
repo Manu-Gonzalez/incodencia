@@ -17,14 +17,13 @@
 
  <!-- HEADER -->
  <header class="fixed w-full z-50 transition-all duration-300 bg-white shadow-md">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="max-w-7xl mx-auto px-6 py-1 flex justify-between items-center">
       <div class="flex items-center gap-4">
-        <img src="logo.svg" alt="Incodencia" class="logo w-40">
+        <img src="logo.svg" alt="Incodencia" class="h-16 w-auto">
       </div>
       <nav class="hidden md:flex gap-6 text-gray-700 font-medium">
         <a href="#inicio" data-i18n="nav_home" class="hover:text-blue-600">Inicio</a>
         <a href="#servicios" data-i18n="nav_services" class="hover:text-blue-600">Servicios</a>
-        <a href="#proyectos" data-i18n="nav_projects" class="hover:text-blue-600">Proyectos</a>
         <a href="#nosotros" data-i18n="nav_about" class="hover:text-blue-600">Nosotros</a>
         <a href="#contacto" data-i18n="nav_contact" class="hover:text-blue-600">Contacto</a>
       </nav>
@@ -46,7 +45,6 @@
   <section id="inicio" class="relative min-h-screen flex flex-col items-center justify-center text-center px-6 bg-black text-white overflow-hidden">
     <div id="particles-js"></div>
     <div class="hero-content">
-      <img src="logo.png" alt="Logo Incodencia" class="mx-auto mb-6 w-28 md:w-40 logo">
       <h2 class="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
         <span id="hero-text"></span>
       </h2>
@@ -55,67 +53,60 @@
     </div>
   </section>
 
-<!-- PROYECTOS PRO -->
-<section id="proyectos" class="py-24 bg-gradient-to-br from-white via-blue-50 to-blue-100 relative overflow-hidden">
+<!-- SERVICIOS -->
+<section id="servicios" class="py-24 bg-gradient-to-br from-white via-blue-50 to-blue-100 relative overflow-hidden">
   <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
-    <h3 class="text-4xl font-bold text-blue-900 mb-4 reveal" data-i18n="projects_title">Proyectos Destacados</h3>
-    <p class="text-gray-700 mb-12 text-lg reveal" data-i18n="projects_sub">Descubre lo mejor de nuestro trabajo con animaciones dinámicas.</p>
+    <h3 class="text-4xl font-bold text-blue-900 mb-12 reveal" data-i18n="services_title">Nuestros Servicios</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-    <div class="relative overflow-hidden">
-      <!-- Carrusel contenedor -->
-      <div id="projects-carousel" class="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory">
-        
-        <!-- Proyecto -->
-        <div class="relative group project-card tilt-card snap-center min-w-[300px] md:min-w-[400px] rounded-2xl shadow-lg bg-white overflow-hidden">
-          <div class="relative w-full aspect-[4/3] overflow-hidden">
-            <img src="https://via.placeholder.com/400x250" alt="Proyecto 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-4">
-            <h4 class="text-white text-xl font-semibold" data-i18n="project_1">Robot Cuadrúpedo</h4>
-            <p class="text-gray-200 text-sm" data-i18n="project_1_desc">Control con ESP8266 vía navegador.</p>
-            <a href="#" class="mt-2 text-sm font-semibold text-green-300 hover:text-green-400">Ver más →</a>
-          </div>
+      <div class="reveal bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition">
+        <div class="w-14 h-14 mb-4 flex items-center justify-center rounded-full bg-blue-100">
+          <i class="fas fa-mobile-alt text-2xl text-blue-600"></i>
         </div>
-
-        <!-- Proyecto -->
-        <div class="relative group project-card tilt-card snap-center min-w-[300px] md:min-w-[400px] rounded-2xl shadow-lg bg-white overflow-hidden">
-          <div class="relative w-full aspect-[4/3] overflow-hidden">
-            <img src="https://via.placeholder.com/400x250" alt="Proyecto 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-4">
-            <h4 class="text-white text-xl font-semibold" data-i18n="project_2">Sistema Web en PHP</h4>
-            <p class="text-gray-200 text-sm" data-i18n="project_2_desc">Gestión de usuarios y productos.</p>
-            <a href="#" class="mt-2 text-sm font-semibold text-green-300 hover:text-green-400">Ver más →</a>
-          </div>
-        </div>
-
-        <!-- Proyecto -->
-        <div class="relative group project-card tilt-card snap-center min-w-[300px] md:min-w-[400px] rounded-2xl shadow-lg bg-white overflow-hidden">
-          <div class="relative w-full aspect-[4/3] overflow-hidden">
-            <img src="https://via.placeholder.com/400x250" alt="Proyecto 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-end p-4">
-            <h4 class="text-white text-xl font-semibold" data-i18n="project_3">IoT y Automatización</h4>
-            <p class="text-gray-200 text-sm" data-i18n="project_3_desc">Soluciones de automatización industrial con sensores.</p>
-            <a href="#" class="mt-2 text-sm font-semibold text-green-300 hover:text-green-400">Ver más →</a>
-          </div>
-        </div>
+        <h4 class="text-xl font-semibold text-blue-900 mb-2" data-i18n="service_mobile">Aplicaciones Móviles</h4>
+        <p class="text-gray-600" data-i18n="service_mobile_desc">Desarrollo de apps nativas y multiplataforma para iOS y Android.</p>
       </div>
 
-      <!-- Botones de navegación -->
-      <button id="prev-project" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-full p-3 hover:scale-110 transition">
-        <img src="https://img.icons8.com/ios-glyphs/24/000000/chevron-left.png" alt="Prev">
-      </button>
-      <button id="next-project" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-full p-3 hover:scale-110 transition">
-        <img src="https://img.icons8.com/ios-glyphs/24/000000/chevron-right.png" alt="Next">
-      </button>
-    </div>
+      <div class="reveal bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition">
+        <div class="w-14 h-14 mb-4 flex items-center justify-center rounded-full bg-blue-100">
+          <i class="fas fa-globe text-2xl text-blue-600"></i>
+        </div>
+        <h4 class="text-xl font-semibold text-blue-900 mb-2" data-i18n="service_web">Sitios Web</h4>
+        <p class="text-gray-600" data-i18n="service_web_desc">Sitios modernos, rápidos y responsivos adaptados a tus necesidades.</p>
+      </div>
 
-    <!-- Botón Ver Más -->
-    <div class="mt-10">
-      <a href="#" class="btn-gradient text-white px-6 py-3 rounded-lg text-lg shadow-lg hover:scale-105 transition">
-        Ver todos los proyectos
-      </a>
+      <div class="reveal bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition">
+        <div class="w-14 h-14 mb-4 flex items-center justify-center rounded-full bg-blue-100">
+          <i class="fas fa-desktop text-2xl text-blue-600"></i>
+        </div>
+        <h4 class="text-xl font-semibold text-blue-900 mb-2" data-i18n="service_desktop">Apps de Escritorio</h4>
+        <p class="text-gray-600" data-i18n="service_desktop_desc">Aplicaciones de escritorio robustas y eficientes para Windows, Mac y Linux.</p>
+      </div>
+
+      <div class="reveal bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition">
+        <div class="w-14 h-14 mb-4 flex items-center justify-center rounded-full bg-blue-100">
+          <i class="fas fa-briefcase text-2xl text-blue-600"></i>
+        </div>
+        <h4 class="text-xl font-semibold text-blue-900 mb-2" data-i18n="service_business">Sistemas para Empresas</h4>
+        <p class="text-gray-600" data-i18n="service_business_desc">Proyectos y sistemas a medida aplicados a la gestión y operación de negocios.</p>
+      </div>
+
+      <div class="reveal bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition">
+        <div class="w-14 h-14 mb-4 flex items-center justify-center rounded-full bg-blue-100">
+          <i class="fas fa-tools text-2xl text-blue-600"></i>
+        </div>
+        <h4 class="text-xl font-semibold text-blue-900 mb-2" data-i18n="service_maintenance">Seguimiento y Mantenimiento</h4>
+        <p class="text-gray-600" data-i18n="service_maintenance_desc">Soporte continuo, actualizaciones y optimización de tus sistemas.</p>
+      </div>
+
+      <div class="reveal bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition">
+        <div class="w-14 h-14 mb-4 flex items-center justify-center rounded-full bg-blue-100">
+          <i class="fas fa-digital-tachograph text-2xl text-blue-600"></i>
+        </div>
+        <h4 class="text-xl font-semibold text-blue-900 mb-2" data-i18n="service_digital">Digitalización de Negocios</h4>
+        <p class="text-gray-600" data-i18n="service_digital_desc">Transformamos tu negocio llevando sus procesos al mundo digital.</p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -185,8 +176,7 @@
 
   <!-- FOOTER -->
   <footer class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-6 text-center">
-    <img src="logo.svg" alt="Logo Incodencia" class="mx-auto mb-3 w-40 logo">
-    <p class="mb-2">&copy; 2025 Incodencia - <span data-i18n="footer_text">Innovación, Seguridad y Confianza</span></p>
+    <p class="mb-2">&copy; 2026 Incodencia - <span data-i18n="footer_text">Innovación, Seguridad y Confianza</span></p>
     <div class="flex justify-center gap-4 mt-3 text-xl">
       <a href="#" class="hover:text-green-400"><i class="fab fa-facebook"></i></a>
       <a href="#" class="hover:text-green-400"><i class="fab fa-linkedin"></i></a>

@@ -1,13 +1,20 @@
 // === Animaciones Incodencia === //
 
 // 1. Typewriter Effect para el Hero
+let typewriterActive = false;
+
 function initTypewriter(elementId, words, speed = 100, pause = 2000) {
+    typewriterActive = false;
+    const id = {};
+    typewriterActive = id;
+
     const element = document.getElementById(elementId);
     let wordIndex = 0;
     let letterIndex = 0;
     let isDeleting = false;
 
     function type() {
+        if (typewriterActive !== id) return;
         const currentWord = words[wordIndex];
         element.textContent = isDeleting
             ? currentWord.substring(0, letterIndex--)
@@ -19,7 +26,7 @@ function initTypewriter(elementId, words, speed = 100, pause = 2000) {
         } else if (isDeleting && letterIndex < 0) {
             isDeleting = false;
             wordIndex = (wordIndex + 1) % words.length;
-            letterIndex = 0; // resetear índice
+            letterIndex = 0;
             setTimeout(type, 500);
         } else {
             setTimeout(type, speed);
@@ -166,11 +173,17 @@ function initProjectCarousel() {
   }
   
 
+window.startTypewriter = function(lang) {
+    const words = (translations[lang]?.typewriter_words || "Innovación,Seguridad,Confianza").split(",");
+    const el = document.getElementById("hero-text");
+    if (el) el.textContent = "";
+    initTypewriter("hero-text", words, 100, 2000);
+};
+
 // === Inicializar todas las animaciones ===
 function initAnimations() {
     const lang = localStorage.getItem("language") || "es";
-    const words = (translations[lang]?.typewriter_words || "Innovación,Seguridad,Confianza").split(",");
-    initTypewriter("hero-text", words, 100, 2000);
+    window.startTypewriter(lang);
     initCardTilt(".tilt-card");
     initRippleEffect(".btn-gradient");
     initMagneticButtons(".btn-gradient");
